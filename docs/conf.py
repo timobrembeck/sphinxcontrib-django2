@@ -9,7 +9,7 @@ from sphinxcontrib_django2 import __version__
 # -- Project information -----------------------------------------------------
 
 project = "sphinxcontrib-django2"
-copyright = "2021"
+copyright = "2023"
 author = "Timo Ludwig"
 
 # The full version, including alpha/beta/rc tags
@@ -22,10 +22,8 @@ release = __version__
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx.ext.autodoc",
     "sphinx_rtd_theme",
     "sphinx_last_updated_by_git",
-    "sphinxcontrib_django2.roles",
 ]
 
 # Warn about all references where the target cannot be found
@@ -45,7 +43,5 @@ exclude_patterns = ["_build"]
 html_theme = "sphinx_rtd_theme"
 # The logos shown in the menu bar
 html_logo = "images/django-sphinx-logo-white.png"
-# The facivon of the html doc files
+# The facicon of the html doc files
 html_favicon = "images/favicon.svg"
-# Do not include links to the documentation source (.rst files) in build
-html_show_sourcelink = False

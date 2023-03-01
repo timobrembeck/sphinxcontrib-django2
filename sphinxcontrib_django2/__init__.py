@@ -3,21 +3,19 @@ This is a sphinx extension which improves the documentation of Django apps.
 """
 __version__ = "1.6"
 
-from . import docstrings, roles
-
 
 def setup(app):
     """
     Allow this module to be used as sphinx extension.
 
-    Setup the two sub-extensions :mod:`~sphinxcontrib_django2.docstrings` and
-    :mod:`~sphinxcontrib_django2.roles` which can also be imported separately.
+    Setup the upstream extension sphinxcontrib-django.
 
     :param app: The Sphinx application object
     :type app: ~sphinx.application.Sphinx
     """
-    docstrings.setup(app)
-    roles.setup(app)
+
+    # Load upstream extension
+    app.setup_extension("sphinxcontrib_django")
 
     return {
         "version:": __version__,

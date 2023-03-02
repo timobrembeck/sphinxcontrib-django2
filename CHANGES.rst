@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Unreleased
-----------
+Version 1.9 (2023-03-02)
+------------------------
 
 Merge this fork `sphinxcontrib_django2 <https://pypi.org/project/sphinxcontrib-django2/>`_ back into the original package `sphinxcontrib_django <https://pypi.org/project/sphinxcontrib-django/>`_.
 This changelog continues `here <https://github.com/edoburu/sphinxcontrib-django/blob/main/CHANGES.rst>`_.
